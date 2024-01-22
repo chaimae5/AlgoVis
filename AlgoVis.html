@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="AlgoVis.html" class="active">Home</a>
+      <a href="algorithms.html">Algorithms</a>
+      <a href="Contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="featured">
+      <div id="left" class="grid-item">
+        <h3 class="text"> Deep Dive Into Data Structures and Algorithms</h3>
+        <p class="paragraph" class="text p-text">
+          Get a deeper understanding of algorithms and data structures, 
+          essential tools for any aspiring computer science student
+          and software developer.
+        </p>
+        <img class="image" src="imgs/0_luXINaVol-3HsPWL-removebg-preview.png" alt="faang logo">
+      </div>
+
+      <div id="right" class="grid-item">
+
+        <div id="right-top">
+          <h2 id="h2">Algorithm Visualization</h2>
+          <!--
+          <img class="image" src="imgs/software.png" alt="software development illustration">
+          -->
+          <p class="paragraph"> 
+            
+          </p>
+        
+        </div>
+
+        <div id="right-bottom">
+          <a href="algorithms.html">
+            <button id="get-started" type="button" class="btn btn-outline-secondary"> Get Started (For Free) </button>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+              <h3 style="font-size: medium;"> <i>Backtracking</i> </h3>
+              <p style="font-size: small;">An algorithm traversing trees/graphs, 
+                prioritizing the exploration of as deep 
+                a path as possible before backtracking.
+              </p>
+          </div>
+
+          <div class="swiper-slide">
+            <h3 style="font-size: medium;"> <i>Depth-First Search</i> </h3>
+            <p style="font-size: small;"> A problem solving technique that explores
+               different possible solutions and 
+               <i>"backtracks"</i> to previous options if they are not viable.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <h3 style="font-size: medium;"> <i>Breadth-First Search</i> </h3>
+            <p style="font-size: small;"> An algorithm for traversing trees/graphs, 
+              exploring all neighbour nodes at the present depth before moving on 
+              to a deeper level.
+            </p>
+          </div>
+          
+          <div class="swiper-slide">
+            <h3 style="font-size: medium;"> <i>Binary Search</i> </h3>
+            <p style="font-size: small;"> An algorithm for finding an element in a sorted list, 
+              repeatedly dividing the search interval in half until the target is located. 
+            </p>
+          </div>
+          <!-- ... -->
+        </div>
+      </div>
+
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
