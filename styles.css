@@ -115,6 +115,10 @@ body {
     overflow: auto; /* Adds scroll if content overflows */
 }
 
+#algorithm-selection {
+  margin: 0 24px;
+}
+
 #h2 {
   background: #f2f2f2; /* Example background color */
   border-radius: 20px; /* Rounded corners */
@@ -259,7 +263,6 @@ footer {
   position: sticky;
   bottom: 0;
   width: 100%;
-
 }
 
 nav ul {
@@ -277,26 +280,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-#algorithm-selection {
-  margin: 20px;
-}
-
-#algorithmSelector {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #007BFF;
-  text-align: center;
-  transition: border-color 0.3s ease;
-}
-
-#algorithmSelector:focus {
-  outline: none;
-  border-color: #0056b3;
-  /* Darker border for focus */
-  box-shadow: 0 0 5px #007BFF;
-  /* Adding a glow effect */
-}
-
 /* Style for the container */
 #arrayInputContainer,
 #targetInput, #arrayInput {
@@ -306,7 +289,7 @@ nav ul li a {
 
 /* Style for array cells */
 .array-cell {
-  width: 25px;
+  width: 45px;
   /* Adjust width as needed */
   margin: 2px;
   padding: 5px;
@@ -379,6 +362,48 @@ button:hover {
   /* Adds horizontal scrolling if the line is too long */
 }
 
+#mySVG {
+  width: 100%;
+  height: 360px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+#visualizationLayout {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(300px, 2fr);
+  gap: 20px;
+  align-items: start;
+}
+
+#outputPanel,
+#treePanel {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 12px;
+}
+
+.panel-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #003366;
+}
+
+/* ---------------------- tree visualization styles ------------------------- */
+.node circle {
+  fill: #E8F0FE;
+  stroke: #320685;
+  stroke-width: 2px;
+}
+
+.node text {
+  fill: #003366;
+  font-weight: 600;
+  font-size: 12px;
+  pointer-events: none;
+}
+
 .subset {
   display: inline-block;
   padding: 3px 6px;
@@ -434,8 +459,6 @@ button:hover {
   background-color: #D0E2FD;
   box-shadow: 0 0 15px #007BFF;
 }
-
-
 
 .title {
   text-align: center;

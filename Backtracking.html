@@ -26,7 +26,7 @@
 
     <main>
       <section id="algorithm-selection">
-        <h2 class="title"> Depth-First Search </h2>
+        <h2 class="title"> Backtracking </h2>
         <!-- Inputs for Backtracking -->
         <div id="arrayInput">
           <label for="arraySize">Array Size:</label>
@@ -41,8 +41,16 @@
         <div id="visualization">
             <!-- Visualization will be rendered here -->
             <h2>Visualization Area</h2>
-            <div id="AlgoOutput"></div>
-            <svg id="mySVG"></svg>
+            <div id="visualizationLayout">
+              <div id="outputPanel">
+                <h3 class="panel-title">Node Values</h3>
+                <div id="AlgoOutput"></div>
+              </div>
+              <div id="treePanel">
+                <h3 class="panel-title">Tree</h3>
+                <svg id="mySVG"></svg>
+              </div>
+            </div>
             <!--buttons for trees' display choice-->
             <!-- 
                 
@@ -61,7 +69,7 @@
     </main>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scriptBacktracking.js"></script>
 </body>
 
 </html>
