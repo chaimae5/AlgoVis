@@ -282,7 +282,9 @@ nav ul li a {
 
 /* Style for the container */
 #arrayInputContainer,
-#targetInput, #arrayInput {
+#targetInput, #arrayInput,
+#executeButton
+{
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -342,11 +344,13 @@ button:hover {
   background-color: #0056b3;
 }
 
-#executeButton {
-  margin-bottom: 25px;
+#controls {
+  margin-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 #visualization {
+  margin-top: 50px !important;
   border: 1px solid #ccc;
   background-color: #fff;
   padding: 20px;
